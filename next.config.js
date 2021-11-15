@@ -8,6 +8,8 @@ module.exports = {
     loader: "imgix",
     path: "https://noop/",
   },
+  basePath: '/nextjs-blog',
+  assetPrefix: '/nextjs-blog',
 }
 
 /*
