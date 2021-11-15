@@ -6,7 +6,6 @@ import Link from 'next/link'
 
 
 const name = 'Berkhan Eminsoy'
-const prefix = '/nextjs-blog'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -32,7 +31,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src= "/nextjs-blog/images/profilePic.jpg"
+              src= "/images/profilePic.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -46,7 +45,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src= "/nextjs-blog/images/profilePic.jpg"
+                  src= "/images/profilePic.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}

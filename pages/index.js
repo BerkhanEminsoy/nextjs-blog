@@ -15,8 +15,6 @@ export async function getStaticProps() {
   }
 }
 
-const prefix = '/nextjs-blog'
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home>

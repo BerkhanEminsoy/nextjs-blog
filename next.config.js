@@ -6,7 +6,7 @@ module.exports = {
   },
   images: {
     loader: "imgix",
-    path: "https://berkhaneminsoy.github.io",
+    path: "https://berkhaneminsoy.github.io/nextjs-blog",
   },
   basePath: '/nextjs-blog',
   assetPrefix: '/nextjs-blog',
