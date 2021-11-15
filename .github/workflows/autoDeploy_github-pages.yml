@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        #cache: 'npm'
+        cache: 'npm'
     - uses: actions/cache@v2
       with:
         path: ${{ github.workspace }}/.next/cache
@@ -37,6 +37,8 @@ jobs:
     - run: npm ci
     - run: npm run build
     - run: npm run export
+    - run: touch ./out/.nojekyll
+    
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
