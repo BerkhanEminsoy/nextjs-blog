@@ -15,6 +15,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.25.0",
     "gray-matter": "^4.0.3",
+    "next-images": "^1.8.2",
     "remark": "^14.0.1",
     "remark-html": "^15.0.0",
     "sass": "^1.43.4"
