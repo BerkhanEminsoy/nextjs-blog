@@ -5,7 +5,7 @@ import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+//const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
