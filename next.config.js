@@ -2,7 +2,7 @@ const path = require('path')
 const withImages = require('next-images')
 
 module.exports = withImages({
-  assetPrefix: 'https://berkhaneminsoy.github.io',
+  assetPrefix: 'https://berkhaneminsoy.github.io/nextjs-blog/',
   dynamicAssetPrefix: true,
   webpack(config, options) {
     return config
