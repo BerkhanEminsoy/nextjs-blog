@@ -45,6 +45,7 @@ jobs:
       env:
         NEXT_PUBLIC_BASE_PATH: /nextjs-blog
     - run: npm run export
+      env:
         NEXT_PUBLIC_BASE_PATH: /nextjs-blog
     - run: touch ./out/.nojekyll
     
