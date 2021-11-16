@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <link rel="shortcut icon" href={prefix + "/public/favicon.ico"}/>
+        <link rel="shortcut icon" href={prefix + "/favicon.ico"}/>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>

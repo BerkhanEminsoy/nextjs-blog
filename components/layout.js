@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="shortcut icon" href={prefix + "/public/favicon.ico"}/>
+        <link rel="shortcut icon" href={prefix + "/favicon.ico"}/>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
