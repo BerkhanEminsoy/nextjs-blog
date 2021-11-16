@@ -8,8 +8,8 @@ module.exports = {
     loader: "imgix",
     path: "https://berkhaneminsoy.github.io/nextjs-blog",
   },
-  basePath: '/nextjs-blog',
-  assetPrefix: '/nextjs-blog',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 }
 
 /*
