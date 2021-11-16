@@ -3,8 +3,9 @@ import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
-
 import { getSortedPostsData } from '../lib/posts'
+
+const prefix = '/nextjs-blog'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -19,6 +20,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
+        <link rel="shortcut icon" href={prefix + "public/favicon.ico"}/>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
