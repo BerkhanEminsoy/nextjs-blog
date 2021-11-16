@@ -1,14 +1,7 @@
 const path = require('path')
 const withImages = require('next-images')
 
-module.exports = withImages({
-  assetPrefix: 'https://berkhaneminsoy.github.io/nextjs-blog',
-  dynamicAssetPrefix: true,
-  webpack(config, options) {
-    return config
-  }
-  }),
-  {
+module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -22,7 +15,6 @@ module.exports = withImages({
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 }
 
-/*
 module.exports = withImages({
   assetPrefix: 'https://berkhaneminsoy.github.io/nextjs-blog',
   dynamicAssetPrefix: true,
@@ -30,4 +22,3 @@ module.exports = withImages({
     return config
   }
 })
-*/
