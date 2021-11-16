@@ -38,14 +38,14 @@ jobs:
           ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
         
     - name: Installing my packages  
-    - run: npm ci
+      run: npm ci
     
     - name: Build my App
-    - run: npm run build 
-      #env:
+      run: npm run build 
+      env:
         # NEXT_PUBLIC_BASE_PATH: /nextjs-blog
     - run: npm run export
-      #env:
+      env:
         # NEXT_PUBLIC_BASE_PATH: /nextjs-blog
     - run: touch ./out/.nojekyll
     
