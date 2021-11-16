@@ -1,5 +1,5 @@
 const path = require('path')
-const withImages = require('/nextjs-blog')
+const withImages = require('next-images')
 
 module.exports = withImages({
   assetPrefix: 'https://berkhaneminsoy.github.io/nextjs-blog/',
